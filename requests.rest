@@ -1,0 +1,33 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWWV2aGVuaWlMaSIsImlhdCI6MTY5Mjg3ODUwMiwiZXhwIjoxNjkyODgyMTAyfQ.2vaFjkE347SemRzPuXwlDregAp-E7yc1Ol5msxtlZ6k
+
+
+###
+
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWWV2aGVuaWlMaSIsImlhdCI6MTY5Mjg3ODgzMn0.Ic_qyMzR413DIRdtNVk5Q2tlNJam4-GaC1GwAbS6AW8"
+}
+
+
+
+###
+
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWWV2aGVuaWlMaSIsImlhdCI6MTY5Mjg3ODgzMn0.Ic_qyMzR413DIRdtNVk5Q2tlNJam4-GaC1GwAbS6AW8"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "YevheniiLi"
+}
